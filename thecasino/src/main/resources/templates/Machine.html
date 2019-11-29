@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="Machine.css" rel="stylesheet">
+        <link th:href="@{/css/Machine.css}" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -14,20 +14,28 @@
             
             <div id="ZoneR">
                 <div class="Roul">
-                    <p class="Res" th:utext="${Machine.Res1}">...</p>
+                    <p class="Res" >
+<!--                     th:utext="${Machine.Res1}" -->
+                    ...</p>
                 </div>
                 <div class="Roul">
-                    <p class="Res" th:utext="${Machine.Res2}">...</p>
+                    <p class="Res">
+<!--                     th:utext="${Machine.Res2}" -->
+                    ...</p>
                 </div>
                 <div class="Roul">
-                    <p class="Res" th:utext="${Machine.Res3}">...</p>
+                    <p class="Res"> 
+<!--                     th:utext="${Machine.Res3}" -->
+                    ...</p>
                 </div>
             </div>
         </section>
         <section id="b">
             <div id="jou">
                 <p id="som">Somme à jouer :</p>
-                <input id="inp" th:field="{Pari}">
+                <input id="inp" >
+<!--                 th:field="{Pari}" -->
+                
                 <button id="bjou" type="submit" name="action" value="Jouer">Jouer</button>
             </div>
         </section>
