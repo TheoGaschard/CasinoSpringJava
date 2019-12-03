@@ -62,7 +62,15 @@
         <strong>JeuxCASINO</strong>
       </a>
       
+             <div class="links links-log"> 
+              	<tr th="user : ${user}">
+	                <td th:text="${user.pseudo}">Pseudo</td>
+	                <td th:text="${user.solde}">Solde</td>
+           		</tr>
+             </div>
+      
        <div class="links links-not-log"> 
+       
        		<form action="#" data-th-action="@{/connexion}">
 				<button class="btn btn-primary my-2" type="submit" name="action" value="save">Se connecter</button>
 			</form>
@@ -81,9 +89,9 @@
       <p class="lead text-muted">Bonjour, Bienvenue sur notre plateforme en ligne de nos meilleurs jeux de CASINO, plein des jeux passionnants vous attendent, Bonne Chance !</p>
       <p>
 	
-    <form action="#" data-th-action="@{/inscription}">
+<!--     <form action="#" data-th-action="@{/inscription}">
 		<button class="btn btn-secondary my-2" type="submit" name="action" value="save">S'inscrire</button>
-	</form> 
+	</form>  -->
       </p>
     </div>
   </section>

@@ -24,7 +24,7 @@ public class User {
     
     private String pseudo;
     private String password;
-    private Float solde;
+    private Float solde= 1000f;
     
 
 

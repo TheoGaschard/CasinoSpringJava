@@ -48,8 +48,8 @@ public class MainController {
     }
  
     @RequestMapping(value = { "/choixDeJeux" }, method = RequestMethod.GET)
-    public String etudiantList(Model model) {
- 
+    public String UserLobby(@ModelAttribute("user") User user) {
+
  
         return "choixDeJeux";
     }

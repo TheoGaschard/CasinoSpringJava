@@ -43,8 +43,6 @@
 							<input type="password" name="" class="form-control input_pass" th:field="*{password}" placeholder="password">
 					</div>
 
-	                 <td>Solde:</td>
-                    <td><input type="text" th:field="*{solde}" /></td>
 
 					<div class="form-group">
 						<button type="submit" name="action" value="S'inscrire" class="btn float-right login_btn">S'inscrire </button>
@@ -55,26 +53,7 @@
 
         <form action="#" th:action="@{/save}" th:object="${user}"
             method="post">
- 
-            <table border="0" cellpadding="10">
     
-                <tr>             
-                    <td>User Pseudo:</td>
-                    <td>
-                        <input type="text" th:field="*{pseudo}" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td><input type="text" th:field="*{password}" /></td>
-                </tr>
-                <tr>
-                    <td>Solde:</td>
-                    <td><input type="text" th:field="*{solde}" /></td>
-                </tr>                         
-                <tr>
-                    <td colspan="2"><button type="submit">Save</button> </td>
-                </tr>
 
       
 			</div>
