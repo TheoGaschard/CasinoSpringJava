@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{css/machine.css}" rel="stylesheet">
+  </head>
+    <body>
+        <header>
+            <h1>CASINO</h1>
+            <form action="#" data-th-action="@{/choixDeJeux}">
+				<button type="submit" name="action" value="save">Acceuil</button>
+			</form>
+        </header>
+        <div id="hh2">
+            <h2>La machine à sous</h2>
+        </div>
+        <section id="a">
+            
+            <div id="ZoneR">
+                <div class="Roul">
+                    <p class="Res" th:utext="${message}">...</p>
+                </div>
+                <div class="Roul">
+                    <p class="Res" th:utext="${message}">...</p>
+                </div>
+                <div class="Roul">
+                    <p class="Res" th:utext="${message}">...</p>
+                </div>
+            </div>
+        </section>
+        <section id="b">
+            <div id="jou">
+                <p id="som">Somme à jouer :</p>
+                <input id="inp" >
+                <button id="bjou" type="submit" name="action" value="Jouer">Jouer</button>
+            </div>
+        </section>
+
+    </body>
+</html>
