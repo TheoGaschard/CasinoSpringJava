@@ -5,12 +5,21 @@
     <link th:href="@{css/machine.css}" rel="stylesheet">
   </head>
     <body>
-        <header>
-            <h1>CASINO</h1>
-            <form action="#" data-th-action="@{/choixDeJeux}">
-				<button type="submit" name="action" value="save">Acceuil</button>
-			</form>
-        </header>
+     <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <form action="#" data-th-action="@{/choixDeJeux}">
+				<button class="btn btn-secondary my-2" type="submit" name="action" value="save">Acceuil</button>
+			</form>	 
+      </a>
+      
+       <div class="links links-not-log"> 
+       		
+			 <div id="betting" >Joueur 1 </div>
+      		<div id="betting"> Score : </div>
+       </div>
+    </div>
+  </div>
         <div id="hh2">
             <h2>La machine à sous</h2>
         </div>

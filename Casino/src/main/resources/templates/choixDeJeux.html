@@ -25,7 +25,9 @@
         -ms-user-select: none;
         user-select: none;
       }
-
+	.joueur{
+          color:lightcyan;
+      }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -58,8 +60,7 @@
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>JeuxCASINO</strong>
+        <img th:src="@{/img/casinogif.gif}" width="140px" height="60px">   
       </a>
       
              <div class="links links-log"> 
@@ -71,8 +72,25 @@
       
        <div class="links links-not-log"> 
        
-       		<form action="#" data-th-action="@{/connexion}">
-				<button class="btn btn-primary my-2" type="submit" name="action" value="save">Se connecter</button>
+				<div class="links links-not-log joueur"> 
+             <div class="links links-log"> 
+                 <table border="1" cellpadding="10">
+        	<thead>
+            <tr>
+                <th>Pseudo</th>
+                <th>Solde</th>
+            </tr>
+        	</thead>
+        	<tbody>
+                  <tr th="user : ${user}">
+                    <td th:text="${user.pseudo}"><p>Pseudo</p>Pseudo</td>
+                    <td th:text="${user.solde}">Solde</td>
+                   </tr>
+        </tbody>
+    </table>
+             </div>
+
+       </div>
 			</form>
 			
 			 

@@ -14,8 +14,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-
-
 public class User {
 	
     @Id
@@ -25,6 +23,24 @@ public class User {
     private String pseudo;
     private String password;
     private Float solde= 1000f;
+	public String getPseudo() {
+		return pseudo;
+	}
+	public void setPseudo(String pseudo) {
+		this.pseudo = pseudo;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public Float getSolde() {
+		return solde;
+	}
+	public void setSolde(Float solde) {
+		this.solde = solde;
+	}
     
 
 
